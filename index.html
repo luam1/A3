@@ -3,62 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complex Div Structure</title>
+    <title>Ficha Pessoal</title>
     <style>
-        /* CSS for styling */
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f0f0f0;
+        table {
+            width: 50%;
+            border-collapse: collapse;
         }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
         }
-        .sidebar {
-            float: left;
-            width: 25%;
-            background-color: #ddd;
-            padding: 10px;
-        }
-        .content {
-            float: left;
-            width: 75%;
-            background-color: #ccc;
-            padding: 10px;
-        }
-        .footer {
-            clear: both;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Header</h1>
-        </div>
-        <div class="sidebar">
-            <h2>Sidebar</h2>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
-        </div>
-        <div class="content">
-            <h2>Content</h2>
-            <p>This is the main content area.</p>
-        </div>
-        <div class="footer">
-            Footer
-        </div>
-    </div>
+    <h2>Ficha Pessoal</h2>
+    <table>
+        <tr>
+            <th>Nome:</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Idade:</th>
+            <td>16 anos</td>
+        </tr>
+        <tr>
+            <th>Passatempos:</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Gostos:</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Telefone:</th>
+            <td></td>
+        </tr>
+    </table>
 </body>
 </html>
