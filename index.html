@@ -1,56 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha Pessoal</title>
+    <title>Descrição do Filme</title>
     <style>
-        table {
-            width: 200%;
-            border-collapse: collapse;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
         }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
         }
-        th {
-            background-color: #ff0000;
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.5;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h2>Ficha Pessoal</h2>
-    <table>
-        <tr>
-            <th>Nome:</th>
-            <td>Marcos Antônio</td>
-        </tr>
-        <tr>
-            <th>Idade:</th>
-            <td>16 anos</td>
-        </tr>
-        <tr>
-            <th>Passatempos:</th>
-            <td>Trabalhar e Jogar</td>
-        </tr>
-        <tr>
-            <th>Gostos:</th>
-            <td>Musical(PHONK,Eletrônica), Literário(Misterio)</td>
-        </tr>
-        <tr>
-            <th>Personalidade:</th>
-            <td>animado, segue mais emoção do que razão</td>
-        </tr>
-        <tr>
-            <th>Email:</th>
-            <td>marcos.stanski@escola.pr.gov.br</td>
-        </tr>
-        <tr>
-            <th>Telefone:</th>
-            <td>(41) 98483-0065</td>
-        </tr>
-    </table>
-    <img src="" height="" windth="">
+    <div class="container">
+        <h1>Título do Filme</h1>
+        <p><strong>Gênero:</strong> Ação, Aventura</p>
+        <p><strong>Duração:</strong> 120 minutos</p>
+        <p><strong>Sinopse:</strong> Este é um filme emocionante que segue a jornada de um herói que deve salvar o mundo de uma ameaça iminente. Com cenas de ação de tirar o fôlego e uma narrativa envolvente, este filme é imperdível para os amantes do gênero.</p>
+        
+        <div class="buttons">
+            <button onclick="rentMovie()">Alugar</button>
+            <button onclick="watchMovie()">Assistir</button>
+            <button onclick="markAsFavorite()">Marcar como Favorito</button>
+        </div>
+    </div>
+
+    <script>
+        function rentMovie() {
+            alert("Você escolheu alugar o filme.");
+            // Aqui você pode adicionar a lógica para alugar o filme
+        }
+
+        function watchMovie() {
+            alert("Você escolheu assistir ao filme.");
+            // Aqui você pode adicionar a lógica para assistir ao filme
+        }
+
+        function markAsFavorite() {
+            alert("Você marcou o filme como favorito.");
+            // Aqui você pode adicionar a lógica para marcar o filme como favorito
+        }
+    </script>
 </body>
 </html>
