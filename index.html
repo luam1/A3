@@ -1,73 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descrição do Filme</title>
+    <title>Locação de Filmes</title>
     <style>
         body {
+            background-color: black;
+            color: white;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 20px;
         }
         .container {
-            background-color: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 600px;
-            margin: auto;
+            margin: 0 auto;
+            background-color: #333;
+            border-radius: 8px;
         }
-        h1 {
-            font-size: 2em;
+        .title {
+            font-size: 24px;
             margin-bottom: 10px;
         }
-        p {
-            line-height: 1.5;
+        .details {
+            margin-bottom: 20px;
         }
         .buttons {
-            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-        .buttons button {
-            background-color: #007bff;
-            color: white;
+        button {
+            padding: 10px 15px;
             border: none;
-            padding: 10px 20px;
-            margin: 5px;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 14px;
         }
-        .buttons button:hover {
-            background-color: #0056b3;
+        button.rent {
+            background-color: #ff0000;
+            color: white;
+        }
+        button.favorite {
+            background-color: #ff0000;
+            color: white;
+        }
+        button.stream {
+            background-color: #ff0000;
+            color: white;
+        }
+        button.report {
+            background-color: #ff0000;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Título do Filme</h1>
-        <p><strong>Gênero:</strong> Ação, Aventura</p>
-        <p><strong>Duração:</strong> 120 minutos</p>
-        <p><strong>Sinopse:</strong> Este é um filme emocionante que segue a jornada de um herói que deve salvar o mundo de uma ameaça iminente. Com cenas de ação de tirar o fôlego e uma narrativa envolvente, este filme é imperdível para os amantes do gênero.</p>
-        
+        <div class="title"></div>
+        <div class="details">
+            <p><strong>Diretor:</strong></p>
+            <p><strong>Ano:</strong></p>
+            <p><strong>Gênero:</strong></p>
+            <p><strong>Sinopse:</strong></p>
+        </div>
         <div class="buttons">
-            <button onclick="rentMovie()">Alugar</button>
-            <button onclick="watchMovie()">Assistir</button>
-            <button onclick="markAsFavorite()">Marcar como Favorito</button>
+            <button class="rent" onclick="rentMovie()">Alugar Filme</button>
+            <button class="favorite" onclick="markFavorite()">Marcar como Favorito</button>
+            <button class="stream" onclick="streamMovie()">Transmitir</button>
+            <button class="report" onclick="reportMovie()">Denunciar</button>
         </div>
     </div>
 
     <script>
         function rentMovie() {
-            alert("Você escolheu alugar o filme.");
+            alert("Filme alugado com sucesso!");
         }
 
-        function watchMovie() {
-            alert("Você escolheu assistir ao filme.");
+        function markFavorite() {
+            alert("Filme marcado como favorito!");
         }
 
-        function markAsFavorite() {
-            alert("Você marcou o filme como favorito.");
+        function streamMovie() {
+            alert("Iniciando transmissão do filme!");
+        }
+
+        function reportMovie() {
+            alert("Filme denunciado!");
         }
     </script>
 </body>
